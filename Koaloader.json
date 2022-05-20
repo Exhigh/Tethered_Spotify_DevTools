@@ -1,0 +1,12 @@
+{
+  "logging": false,
+  "enabled": true,
+  "auto_load": false,
+  "targets": ["Spotify.exe"],
+  "modules": [
+	{
+      "path": "Lyptus32.dll",
+      "required": true
+    }
+  ]
+}

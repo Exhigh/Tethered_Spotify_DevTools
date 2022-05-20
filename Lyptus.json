@@ -1,0 +1,13 @@
+{
+  "logging": false,
+  "patches": [
+	{
+      "name": "Dev-Tools-Patch",
+      "pattern": "32 c0 80 bd ?? fb ff ff 00 75 04",
+      "offset": 0,
+      "replacement": "b0 01",
+      "enabled": true,
+      "required": false
+    }
+  ]
+}
