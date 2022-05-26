@@ -17,7 +17,7 @@ Plus this didn't allow us to have access to the right context menu which althoug
 the `xpui.js` file within `xpui.spa`. Anyway having gone down the path of trying to find something better, I stumbled across this method.
 
 Also, this method is resilient across updates as we won't be required to update the pattern for every single update, 
-as this method activates the Dev-Tools from Spotify version `1.1.80+ - 1.1.85+` which is quite convenient.
+as this method activates the Dev-Tools from Spotify version `1.1.80+ - 1.1.86+` which is quite convenient.
 
 Not to say that this pattern will hold true for future patches to come but updating this pattern will be far easier,
 as we will just need to update the pattern within `Lyptus.json`.
