@@ -30,7 +30,7 @@ as we will just need to update the pattern within `Lyptus.json`.
 
 #### Underlying-Method
 So, basically we use Koaloader to load `Lyptus32.dll` into the Spotify Executable, 
-this is achieved using Search-Order Hijacking using the `propsys.dll` (32-bit) file provided by Koaloader.
+this is achieved using Search-Order Hijacking using Koaloader.
 
 We then search for a specific Hex String Pattern in the Spotify Executable which then we replace,
 this Hex String with the patched Hex String to enable the Dev-Tools within Spotify.
