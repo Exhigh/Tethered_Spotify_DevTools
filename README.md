@@ -2,11 +2,17 @@
 This patch enables us to activate the dev tools for Spotify in a tethered manner.
 
 ## Usage
-Copy the files included in the zip from the Release Section into the Spotify Directory.          
+Copy the files included in the zip file from the Release Section into Spotify's Directory.          
 Start Spotify or Restart Spotify if it was already running and presto !. 
 
 Dev-Tools has been acitvated and with the right context menu working as inteded,           
 as well as the patch working even after restarts and reloads of the application.
+
+`Note`: To avoid showing error messages saying that Lyptus32.dll was not found when running Spotify
+	  via the terminal or powershell, inside the file `Koaloader.json`, 
+	  in the line for `path` point to `Lyptus32.dll` absolute location within the double quotes.
+	  
+	  Eg. `C:\\Users\\Username\\AppData\\Roaming\\Spotify\\Lyptus32.dll` or `C:/Users/Username/AppData/Roaming/Spotify/Lyptus32.dll`
 
 ### Reasons
 I used this method to achieve what we could basically already achieve but was a clunky solution as the solution,
@@ -17,7 +23,7 @@ Plus this didn't allow us to have access to the right context menu which althoug
 the `xpui.js` file within `xpui.spa`. Anyway having gone down the path of trying to find something better, I stumbled across this method.
 
 Also, this method is resilient across updates as we won't be required to update the pattern for every single update, 
-as this method activates the Dev-Tools from Spotify version `1.1.80+ - 1.1.86+` which is quite convenient.
+as this method activates the Dev-Tools from Spotify version `1.1.80+ - 1.1.87+` which is quite convenient.
 
 Not to say that this pattern will hold true for future patches to come but updating this pattern will be far easier,
 as we will just need to update the pattern within `Lyptus.json`.
